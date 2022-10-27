@@ -15,6 +15,7 @@ func Cmd() *cobra.Command {
 	cmd.Flags().BoolVarP(&buildOptions.ExtractAssets, "extract-assets", "e", false, "extract the assets and put them in a distinct archive")
 	cmd.Flags().BoolVarP(&buildOptions.SkipAssets, "skip-assets", "k", false, "skip running webpack and building assets")
 	cmd.Flags().BoolVarP(&buildOptions.SkipBuildDeps, "skip-build-deps", "", false, "skip building dependencies")
+	cmd.Flags().BoolVarP(&buildOptions.SkipGoModTidy, "skip-go-mod-tidy", "", false, "skip running go mod tidy")
 	cmd.Flags().BoolVarP(&buildOptions.Static, "static", "s", false, "build a static binary using  --ldflags '-linkmode external -extldflags \"-static\"'")
 	cmd.Flags().StringVar(&buildOptions.LDFlags, "ldflags", "", "set any ldflags to be passed to the go build")
 	cmd.Flags().BoolVarP(&buildOptions.Verbose, "verbose", "v", false, "print debugging information")

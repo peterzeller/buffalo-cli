@@ -21,6 +21,7 @@ type Options struct {
 	CleanAssets   bool `json:"clean_assets"`
 	WithAssets    bool `json:"with_assets,omitempty"`
 	WithBuildDeps bool `json:"with_build_deps,omitempty"`
+	WithGoModTidy bool `json:"with_go_mod_tidy,omitempty"`
 	// places ./public/assets into ./bin/assets.zip.
 	// requires WithAssets = true
 	ExtractAssets bool `json:"extract_assets,omitempty"`

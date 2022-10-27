@@ -15,7 +15,9 @@ func apkg(opts *Options) (*genny.Generator, error) {
 
 	g.RunFn(copyInflections)
 	g.RunFn(copyDatabase)
-	g.RunFn(addDependencies)
+	if opts.WithGoModTidy {
+		g.RunFn(addDependencies)
+	}
 
 	return g, nil
 }

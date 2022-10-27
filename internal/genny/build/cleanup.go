@@ -35,7 +35,7 @@ func Cleanup(opts *Options) genny.RunFn {
 				return err
 			}
 		}
-		if opts.WithBuildDeps {
+		if opts.WithBuildDeps && opts.WithGoModTidy {
 			return r.Exec(exec.Command("go", "mod", "tidy"))
 		}
 		return nil

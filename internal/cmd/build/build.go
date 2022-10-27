@@ -21,6 +21,7 @@ var buildOptions = struct {
 	*build.Options
 	SkipAssets             bool
 	SkipBuildDeps          bool
+	SkipGoModTidy          bool
 	Debug                  bool
 	Tags                   string
 	SkipTemplateValidation bool
@@ -49,6 +50,7 @@ func runE(cmd *cobra.Command, args []string) error {
 
 	buildOptions.Options.WithAssets = !buildOptions.SkipAssets
 	buildOptions.Options.WithBuildDeps = !buildOptions.SkipBuildDeps
+	buildOptions.Options.WithGoModTidy = !buildOptions.SkipGoModTidy
 
 	run := genny.WetRunner(ctx)
 	if buildOptions.DryRun {
