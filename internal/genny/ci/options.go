@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/gobuffalo/cli/internal/runtime"
+	"github.com/peterzeller/buffalo-cli/internal/runtime"
 	"github.com/gobuffalo/meta"
 	"github.com/gobuffalo/pop/v6"
 )

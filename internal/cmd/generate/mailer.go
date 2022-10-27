@@ -3,7 +3,7 @@ package generate
 import (
 	"context"
 
-	"github.com/gobuffalo/cli/internal/genny/mail"
+	"github.com/peterzeller/buffalo-cli/internal/genny/mail"
 	"github.com/gobuffalo/flect/name"
 	"github.com/gobuffalo/genny/v2"
 	"github.com/gobuffalo/genny/v2/gogen"

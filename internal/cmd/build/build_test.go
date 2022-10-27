@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/gobuffalo/cli/internal/testhelpers"
+	"github.com/peterzeller/buffalo-cli/internal/testhelpers"
 	"github.com/stretchr/testify/require"
 )
 

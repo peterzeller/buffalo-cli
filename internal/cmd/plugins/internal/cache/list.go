@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gobuffalo/cli/internal/plugins"
+	"github.com/peterzeller/buffalo-cli/internal/plugins"
 	"github.com/spf13/cobra"
 )
 

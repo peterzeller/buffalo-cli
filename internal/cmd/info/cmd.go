@@ -2,7 +2,7 @@ package info
 
 import (
 	"github.com/gobuffalo/clara/v2/genny/rx"
-	"github.com/gobuffalo/cli/internal/genny/info"
+	"github.com/peterzeller/buffalo-cli/internal/genny/info"
 	"github.com/gobuffalo/meta"
 	"github.com/spf13/cobra"
 )

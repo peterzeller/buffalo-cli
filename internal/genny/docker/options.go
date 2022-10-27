@@ -1,7 +1,7 @@
 package docker
 
 import (
-	"github.com/gobuffalo/cli/internal/runtime"
+	"github.com/peterzeller/buffalo-cli/internal/runtime"
 	"github.com/gobuffalo/meta"
 )
 

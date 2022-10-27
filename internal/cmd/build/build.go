@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gobuffalo/cli/internal/genny/build"
+	"github.com/peterzeller/buffalo-cli/internal/genny/build"
 	"github.com/gobuffalo/genny/v2"
 	"github.com/gobuffalo/logger"
 	"github.com/gobuffalo/meta"
